@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 4</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!--Strafun Oleksandr-->
+    <center>
+        <h1><font face="Arial">Sposoby podłączania styli do strony (skrócone zestawienie).</font></h1>
+    </center>
+    <a><font face="Arial">1)<u>Zewnętrzny</u> arkusz stylów</font></a>
+    <table>
+        <tr>
+            <td>
+                <code>
+                    &lt;head&gt; <br>
+                    &nbsp;&nbsp; &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt; <br>
+                    &lt;/head&gt;
+                </code>
+            </td>
+        </tr>
+    </table>
+    <a><font face="Arial">2) Styl <u>lokalny</u> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli dopisanie arkusza do wybranego bloku treści strony.</font></a>
+    <table>
+        <tr>
+            <td>
+                <code>
+                    &lt;selektor style="cecha1: wartość1; cecha2: wartość2..."&gt;...&lt;/selektor&gt;
+                </code>
+            </td>
+        </tr>
+    </table>
+    <a><font face="Arial">3)<u>Wewnętrzny</u> arkusz stylów</font></a>
+    <table>
+        <tr>
+            <td>
+                <code>
+                    &lt;head&gt;<br>
+                    &nbsp; &lt;style type="text/css"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;selektor 1 {cecha: wartość; cecha2: wartość2...}<br>
+                    &nbsp;&nbsp;&nbsp;selektor 2 {cecha: wartość; cecha2: wartość2...}<br>
+                    &nbsp;&lt;/style&gt;<br>
+                    &lt;/head&gt;
+                </code>
+            </td>
+        </tr>
+    </table>
+    <a><font face="Arial">4)<u>Alternatywny</u> arkusz stylów.</font></a>
+    <table>
+        <tr>
+            <td>
+                <code>
+                    &lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;link rel="Alternate stylesheet" type="text/css" href=style2.css" title="Nazwa2" /&gt;<br>
+                    &lt;/head&gt;
+                </code>
+            </td>
+        </tr>
+    </table>
+    <a><font face="Arial">5)<u>Import</u> arkusza stylów.</font></a>
+    <table>
+        <tr>
+            <td>
+                <code>
+                    &lt;style type="text/css"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@import url(adres zewnętrznego arkusza stylów);<br>
+                    &lt;/style&gt;
+                </code>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
