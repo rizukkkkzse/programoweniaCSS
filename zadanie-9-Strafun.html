@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="Stylesheet" type="text/css" href="" />
+</head>
+<body>
+    <center>
+        <h1>Pytania dotyczące stylu zewnętrznego</h1>
+    </center>
+    <ol>
+        <li>Składnia teoretyczna</li>
+        <table border="1">
+            <tr>
+                <td style="font-family: Arial;">
+                    <pre>
+    &lt;link rel="stylesheet" type="text/css" href="styl.css"&gt;
+                    </pre>
+                </td>
+            </tr>
+        </table>
+    
+        <li>Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz ile razy może on występować w dokumencie, jako podłączenie stylu CSS?</li>
+        <p style="font-family: Arial;">Styl zewnętrzny jest wstawiany w sekcji <code>&lt;head&gt;</code> dokumentu HTML. Za podłączenie stylu CSS odpowiada znacznik <code>&lt;link&gt;</code>. Może występować wiele razy w dokumencie, aby podłączyć różne arkusze styli.</p>
+    
+        <li>Jak jest najprostsza forma wstawiania stylu zewnętrznego?</li>
+        <table border="1">
+            <tr>
+                <td style="font-family: Arial;">
+                    <pre>
+    &lt;link rel="stylesheet" href="nazwa_pliku.css"&gt;
+                    </pre>
+                </td>
+            </tr>
+        </table>
+    
+        <li>Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad musi być zachowana przy większej ilości dołączanych styli?</li>
+        <p style="font-family:Arial">Może być dołączonych wiele arkuszy styli do jednego dokumentu HTML. W przypadku wielu arkuszy styli, zachowana musi być kolejność ich podłączenia, gdyż style z później podłączonych arkuszy mogą nadpisać style z wcześniej podłączonych.</p>
+    
+        <li>Co się dzieje w przypadku konfliktów?</li>
+        <p style="font-family: Arial; ">W przypadku konfliktów, czyli gdy te same style są definiowane w różnych arkuszach styli podłączonych do tego samego dokumentu, zastosowane zostaną style z arkusza podłączonego później, nadpisując style z wcześniejszych arkuszy.</p>
+    
+        <li>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</li>
+        <p style="font-family: Arial;">Pliki arkuszy styli mogą być tworzone i edytowane za pomocą zwykłego edytora tekstowego, takiego jak Notepad na systemie Windows lub TextEdit na systemie MacOS.</p>
+    
+        <li>Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</li>
+        <p style="font-family: Arial;">Specjalne edytory CSS, takie jak Visual Studio Code, Sublime Text, czy Adobe Dreamweaver, posiadają funkcjonalności dedykowane do edycji arkuszy styli, co ułatwia pracę nad nimi.</p>
+    
+        <li>Jakie rozszerzenie posiadają pliki będący zewnętrznym arkuszem styli?</li>
+        <p style="font-family: Arial;">Pliki będące zewnętrznym arkuszem styli mają rozszerzenie .css.</p>
+    
+        <li>Jakie są zalety zewnętrznego arkusza styli?</li>
+        <ul>
+            <li style="font-family: Arial;">Możliwość wielokrotnego wykorzystania tego samego arkusza styli w różnych dokumentach HTML.</li>
+            <li style="font-family: Arial;">Oddzielenie zawartości od prezentacji, co ułatwia zarządzanie stylem strony.</li>
+        </ul>
+    
+        <li>Uwagi na temat pisania w CSS</li>
+        <p style="font-family: Arial;">Podczas pisania w CSS ważne jest zachowanie odpowiedniej struktury kodu, używanie odpowiednich selektorów, unikanie nadmiernego zagnieżdżania, oraz dbałość o czytelność i łatwość utrzymania kodu.</p>
+    </ol>
+</body>
+</html>
