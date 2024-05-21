@@ -1,0 +1,14 @@
+p{
+    color: red;
+    font-size: 22pt;
+}
+#gruby_strafun{
+    color: green;
+    font-size: 17pt;
+    font-weight: bold;
+}
+#dlawszystkich_strafun{
+    color: yellow;
+    font-family: Arial;
+    font-size: 10pt;
+}
